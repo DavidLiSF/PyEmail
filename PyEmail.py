@@ -1,5 +1,5 @@
 """
-PyEmail is a fast, powerful, flexible and easy to use open source Email tool.
+PyEmail is a fast, powerful, and easy to use open source Email tool.
 """
 
 from email.mime.multipart import MIMEMultipart
