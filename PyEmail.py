@@ -1,10 +1,10 @@
 """
-PyEmail is a fast, powerful, and easy to use open source Email tool.
+PyEmail is a fast, powerful, and easy-to-use open-source Email tool.
 """
 
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from smtplib import SMTP_SSL
+from smtplib import SMTP_SSL, SMTPServerDisconnected
 from ssl import create_default_context
 from typing import List, Optional
 
@@ -53,7 +53,7 @@ class Email:
 
         self.subject = subject
         self.is_html = html is not None
-        self.content = html if self.is_html else text
+        self.content: str = html if self.is_html else text  # type: ignore
 
     @property
     def message(self) -> MIMEText:
@@ -86,7 +86,7 @@ class Server:
 
         Args:
             email: User's Email account.
-            password: Email account password. 
+            password: Email account password.
             server: A computer with mail transfer agent (MTA) functions.
             port: The Simple Mail Transfer Protocol. Defaults to None.
             ttls: Tunneled Transport Layer Security. Defaults to True.
@@ -107,7 +107,35 @@ class Server:
         self.smtp.login(self.address, password)
 
     def __del__(self) -> None:
-        self.smtp.quit()
+        self.quit()
+
+    def __enter__(self) -> "Server":
+        return self
+
+    def __exit__(self, type, value, traceback) -> None:
+        self.quit()
+
+    def is_connected(self) -> bool:
+        """Check connection status.
+
+        Check if the server instance is still connected with the SMTP server.
+
+        Returns:
+            True if it is connected, otherwise false.
+        """
+        try:
+            status = self.smtp.noop()[0]
+        except SMTPServerDisconnected:
+            return False
+        return status == 250
+
+    def quit(self) -> None:
+        """Quit connection.
+
+        Safely disconnected. Only when a connection exists.
+        """
+        if self.is_connected():
+            self.smtp.quit()
 
     def send(
         self,
@@ -145,5 +173,5 @@ class Server:
 
         # send email
         self.smtp.sendmail(
-            from_addr=self.address, to_addrs=to + cc, message.as_string()
+            from_addr=self.address, to_addrs=to + cc, msg=message.as_string()
         )
