@@ -12,9 +12,9 @@ from typing import List, Optional
 class Email:
     """Email
 
-    Saved basic Email information, including the title/subject and the
-    Email body. Two types of Email bodies are allowed: plain text and
-    HTML.
+    The class saves basic Email information, including the title/subject
+    and the Email body. Two types of Email bodies are allowed: plain
+    text and HTML.
 
     This Email class also provides a property to convert all saved
     information to MIMEText and can be used to send out using Server
