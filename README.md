@@ -1,4 +1,6 @@
+<p align="center">
 ![PyEmail Logo](https://user-images.githubusercontent.com/76184559/108545275-99ce1900-72b5-11eb-913f-baa768335c07.png)
+</p>
 
 PyEmail is a fast, powerful, and easy-to-use open-source Email tool.
 
