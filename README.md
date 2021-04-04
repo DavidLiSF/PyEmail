@@ -4,7 +4,7 @@
 
 PyEmail is a fast, powerful, and easy-to-use open-source Email tool.
 
-* Integrated [Standard Libraries](https://docs.python.org/3/library/) to provide a powerfully, user-friendly, and programmatically mail user agent;
+* Integrated [standard libraries](https://docs.python.org/3/library/) to provide a powerfully, user-friendly, and programmatically mail user agent;
 * All in a single file with no dependencies other than the [Python Standard Library](https://docs.python.org/3/library/).
 
 ## Features
