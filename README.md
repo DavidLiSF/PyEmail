@@ -8,7 +8,8 @@ PyEmail is a fast, powerful, and easy-to-use open-source Email tool.
 * All in a single file with no dependencies other than the [Python Standard Library](https://docs.python.org/3/library/).
 
 ## Features
-
+- The defined Email class allows users to set HTML or plain text and reuse the information;
+- The defined Server class can automatically manage the connection and send an email.
 
 ## Installation
 ```bash
