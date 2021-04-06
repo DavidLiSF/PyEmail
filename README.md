@@ -26,4 +26,4 @@ with Server("user@email.com", "password", "domain.org") as server:
 ```
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/SFL09/PyEmail/blob/main/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/SFL09/PyEmail/blob/main/LICENSE) file for details.
