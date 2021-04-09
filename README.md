@@ -16,6 +16,10 @@ PyEmail is a fast, powerful, and easy-to-use open-source Email tool.
 $ python -m pip install .
 ```
 
+```bash
+$ python setup.py install
+```
+
 ## Example
 ```python
 from PyEmail import Email, Server
