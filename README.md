@@ -2,10 +2,12 @@
   <img src="https://user-images.githubusercontent.com/76184559/108545275-99ce1900-72b5-11eb-913f-baa768335c07.png"/>
 </p>
 
+<p align="center">
 ![Version: v0.1.0](https://img.shields.io/badge/version-v0.1.0-orange)
 [![GitHub license](https://img.shields.io/github/license/SFL09/PyEmail)](https://github.com/SFL09/PyEmail/blob/main/LICENSE)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+</p>
 
 PyEmail is a fast, powerful, and easy-to-use open-source Email tool.
 
