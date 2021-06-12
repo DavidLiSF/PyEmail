@@ -9,7 +9,7 @@
     <a href="https://pycqa.github.io/isort/"><img alt="Imports: isort" src="https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336"></a>
 </p>
 
-PyEmail is a fast, powerful, and easy-to-use open-source Email tool that provides a powerfully, user-friendly, and programmatically mail user agent. The tool is in a single file with no dependencies other than the [Python Standard Library](https://docs.python.org/3/library/).
+PyEmail is a fast, powerful, and easy-to-use open-source Email tool that provides a powerfully, user-friendly, and programmatically mail user agent. PyEmail is in a single file with no dependencies other than the [Python Standard Library](https://docs.python.org/3/library/).
 
 ## Features
 - The defined Email class allows users to set HTML or plain text and reuse the information;
