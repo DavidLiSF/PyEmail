@@ -18,7 +18,10 @@ PyEmail is a fast, powerful, and easy-to-use open-source Email tool.
 - The defined Email class allows users to set HTML or plain text and reuse the information;
 - The defined Server class can automatically manage the connection and send an email.
 
-## Installation
+## Installation from sources
+The source code is currently hosted on GitHub at:
+https://github.com/SFL09/PyEmail
+
 ```bash
 $ python -m pip install .
 ```
