@@ -33,7 +33,7 @@ from PyEmail import Email, Server
 
 email = Email(subject="My email title.", text="Hello!")
 with Server("user@email.com", "password", "domain.org") as server:
-    server.send(email, to=["guest@email.com", "vistor@email.com"])
+    server.send(email, to=["guest@email.com", "visitor@email.com"])
 ```
 
 ## License
